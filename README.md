@@ -1,1 +1,12 @@
-# IT120-FINAL-PROJECT
+The Raw Nuts Classification mobile application is a comprehensive image-based system developed to accurately identify different types of raw nuts using a smartphone. Built with Flutter, the app delivers a smooth and responsive user experience while supporting modern mobile features such as camera access and gallery integration. Users can capture a photo in real time or select an existing image, making the system flexible for both live testing and offline evaluation. Once an image is provided, the application automatically preprocesses it by resizing and normalizing the image to match the required input format of the machine learning model.
+
+At the core of the application is a TensorFlow Lite Convolutional Neural Network trained to recognize ten distinct nut varieties, including Almond, Cashew, Peanut, Walnut, Pistachio, Hazelnut, Macadamia, Pecan, Pili, and Pine nuts. The model analyzes visual features such as texture, shape, and color patterns in the image and produces confidence scores for each supported class. The system then determines the most probable nut type based on the highest confidence score and presents the result to the user in a clear and understandable format.
+
+The prediction output is enhanced with additional context to improve user understanding. Along with the predicted nut class and confidence percentage, the app displays a reference image and a concise description of the detected nut. A confidence graph is also shown, illustrating how the model evaluated all possible classes, which helps users see the relative certainty of the prediction. This transparency allows users to better trust and interpret the classification results rather than relying on a single output value.
+
+Beyond classification, the application includes an analytics component that records prediction history and evaluates model performance over time. Detection logs are stored locally and synchronized with Firebase Firestore, enabling the system to generate insights such as total detections, accuracy rate, error rate, and class distribution. These analytics provide valuable feedback for assessing the reliability of the model and identifying areas where performance can be improved.
+
+Overall, the Raw Nuts Classification mobile application demonstrates the effective integration of mobile development, machine learning, and data analytics into a single system. By combining real-time image processing, informative visual feedback, and performance tracking, the app offers a practical and educational tool that can be extended for use in agriculture, food inspection, and research-based applications.
+
+
+https://github.com/deajanina
